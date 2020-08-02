@@ -1,4 +1,5 @@
 from mrivis import checkerboard
+from mrivis import color_mix
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -12,4 +13,7 @@ path2='../101309_T1w_acpc_dc.nii'
 
 #fig=checkerboard(path1, path2) # square patches
 #fig.savefig('test.png')
-checkerboard(path1, path2,output_path="test.png") # square patches
+#checkerboard(path1, path2,output_path="test.png") # square patches
+
+color_mix(img_spec1=path1, img_spec2=path2,alpha_channels=[1,1],output_path="test-colorchannels.png",
+    num_rows=2) 
