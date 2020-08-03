@@ -1,14 +1,14 @@
 from matplotlib import pyplot as plt
 import numpy as np
 import os
-from mrivis import Collage
+from mrivis import Carpet
 import sys
 
 
 if len(sys.argv)==2:
     path1 = sys.argv[1]
     if os.path.isfile(path1):
-        func_carpet = Carpet(epi_path)
+        func_carpet = Carpet(path1)
         ax = func_carpet.show()
         ax.figure.savefig('carpet.png')
 
