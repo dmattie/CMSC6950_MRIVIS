@@ -5,7 +5,13 @@ JOSS Paper: https://joss.theoj.org/papers/10.21105/joss.00897
 
 # Installation instructions
 
-Create a virtual environment
+Check to see if your environment is good to go:
+
+```
+./envtest.sh
+```
+
+If not, start here: Create a virtual environment
 
 ```
 python -m venv ~/environments/CMSC6950_mrivis  
