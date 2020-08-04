@@ -1,5 +1,5 @@
 report.pdf: collage.png carpet.png Report.tex
-	echo latexmk -pdf   # [TODO] latexmk does'nt fit on my laptop!!!	
+	latexmk -pdf   # [TODO] latexmk does'nt fit on my laptop!!!	
 
 T1sample.nii:
 	cp mrivis/example_datasets/3569_bl_PPMI_smoothed.nii ./T1sample.nii
@@ -23,6 +23,7 @@ clean:
 	rm -f *.pdf
 	rm -f *.log
 	rm -f *.aux
+	rm -f Report.f*
 
 almost_clean:
 	latexmk -c
