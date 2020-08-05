@@ -20,5 +20,5 @@ if [ $errcnt -eq "0" ]
 then
    echo "Everything looks hunky-dory.  You can run $green make $normal to get going."
 else
-   echo "Looks like you are missing some packages.  Try:$yellow pip install -r requirements.txt"
+   echo "Looks like you are missing some packages.  Try:$yellow pip install -r requirements.txt $normal"
 fi
