@@ -31,7 +31,16 @@ To create the report, simply type ```make``` in the installation directory.
 To exeriment with the demo, use the following commands:
 
 ```
-python demo-collage.py [path-to-nii-file]
+python demo-collage.py {path-to-nii-file | URL-to-nii }
 python demo-carpet.py [path-to-4D-nii-file]
 
+```
+
+In addition, Make can take a parameter for the source Nifti files:
+
+See the following to examples:
+
+```
+make_example.sh
+make_example_uri.sh
 ```

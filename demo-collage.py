@@ -30,10 +30,11 @@ if len(sys.argv)==2:
             print(f"valid URL")
             r = requests.get(path1,allow_redirects=True)
             open('T1sample.nii','wb').write(r.content)
+            render('T1sample.nii','collage.png')
             
 
 
         
 else:
-    print("Usage: python demo-collage.py full-path-to-nii-file")
+    print("Usage: python demo-collage.py {full-path-to-nii-file|url-to-nii")
 
